@@ -29,8 +29,7 @@ export const startServer = () => {
     }),
   );
 
-  // app.use(studentsRouter); // Додаємо роутер до app як middleware
-  app.use(router); // Додаємо роутер до app як middleware
+  app.use(router);
 
   app.use('/*splat', notFoundHandler);
 
